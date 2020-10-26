@@ -110,8 +110,8 @@ function printGraphic(d){
   // if the description includes the word "sunny"
   } else if( d.indexOf('sunny') > 0 ) {
     return '<img src="img/svg/ON_P2_sun-02.svg" alt="T-Shirt">';
-  // if none of those cases are true, assume it's clear
-  } else if{d.indexOf('cold')
+  // if the description includes the word "cold"
+  } else if( d.indexOf('cold') > 0 ) {
     return '<img src="img/svg/ON_p2_wintercoat-02.svg" alt="Winter Coat">';
   }
 }
