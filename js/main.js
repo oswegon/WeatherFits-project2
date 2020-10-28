@@ -31,6 +31,7 @@ function drawWeather( d ) {
   $('.current-day').html( displayDay(0) );
   $('.current-high').html( convertTemp(d.daily[0].temp.max) );
   $('.current-low').html(convertTemp(d.daily[0].temp.min) );
+  $('.current .icon').html(printGraphic(d.daily[0].weather[0].description) );
   //changeTheme(d.current.weather[0].description);
 
   //Second Day Display Info
@@ -109,10 +110,10 @@ function printGraphic(d){
     return '<img src="img/svg/ON_P2_Hoodie-02.svg" alt="Hoodie">';
   // if the description includes the word "sunny"
   } else if( d.indexOf('sunny') > 0 ) {
-    return '<img src="img/svg/ON_P2_sun-02.svg" alt="T-Shirt">';
+    return '<img src="img/svg/ON_P2_tshirt-02.svg" alt="T-Shirt">';
   // if the description includes the word "cold"
   } else if( d.indexOf('cold') > 0 ) {
-    return '<img src="img/svg/ON_p2_wintercoat-02.svg" alt="Winter Coat">';
+    return '<img src="img/svg/ON_P2_wintercoat-02.svg" alt="Winter Coat">';
   }
 }
 
